@@ -10,8 +10,11 @@ This is a repo of links and tools that makes Graphite even more awesome. Feel fr
 To open or copy the Graphite or Github links to the clipboard from the CLI, run the following
 
 ```
-# Open Graphite Page
-gt dp
+# Open Graphite dashboard
+gt dash
+
+# Open Graphite PR page for the current branch
+gt pr
 
 # Open Github Page
 gt bi | grep -F app.graphite.dev | sed -E 's|https://app\.graphite\.dev/github/pr/([^/]+)/([^/]+)/([^/]+)|https://github.com/\1/\2/pull/\3|' | xargs open
